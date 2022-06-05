@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+  *{
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Maven Pro', sans-serif;
+  }
+
+  .mobile-container{
+    max-width: 100%;
+    background: #555;
+    height: 100vh;
+    color: white;
+    /*border-radius: 10px;*/
+  }
+
+  .topnav{
+    overflow: hidden;
+    background: #333;
+    position: relative;
+  }
+
+  .topnav #myLinks{
+    display: none;
+  }
+
+  .topnav a{
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+  }
+
+  .topnav a.icon{
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .active{
+    background: #4470c0;
+    color: white;
+  }
+
+  .topnav a:hover{
+     background: #ddd;
+    color: black;
+  }
+
+</style>
+</head>
+
+<body>
+
+<nav class="mobile-container">
+
+ <div class="topnav">
+    <a href="#" class="active"> PrateekNimborkar </a>
+    <div id="myLinks">
+      <a href="#"> Home </a>
+      <a href="#"> Contactus</a>
+      <a href="https://www.thapatechnical.com/" target="_blank">About</a>
+    </div>
+    <a href="javascript:void(0)" class="icon" onclick="myFunction()"> <i class="fa fa-bars" aria-hidden="true"></i>  </a>
+ </div>
+
+ <section>
+   <div>
+
+  
+
+    
+
+  </div>
+ </section>
+
+</nav>
+  
+<script>
+
+
+ function myFunction() {
+     var showhide = document.getElementById('myLinks');
+     if(showhide.style.display === "block"){
+      showhide.style.display = "none";
+     } else {
+      showhide.style.display = "block";
+     }
+ }
+
+</script>
+
+</body>
+</html>
